@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blockchain</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    body {
+        background-color: #f9f9fb;
+    }
+    .card {
+        width: 600px;
+        padding: 36px 26px;
+        background: #fff;
+        margin: auto;
+        box-shadow: 0 1px 1px 0 rgba(10,16,34,.2);
+        border-radius: 10px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        margin-bottom: 50px;
+        max-width: -webkit-fit-content;
+    }
+    .card:hover {
+        box-shadow: 0 10px 30px -5px rgba(10,16,34,.2);
+    }
+    .flex {
+        display: flex;
+    }
+    .input-box {
+        width: 100%;
+    }
+    .input-box input {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        padding: 4px 11px;
+        width: 100%;
+        height: 32px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: rgba(0,0,0,.65);
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .label-name {
+        padding: 4px 11px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: rgba(0,0,0,.65);
+        text-align: center;
+        background-color: #fafafa;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        position: relative;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0;
+        border-right: 0;
+    }
+    .prev-hashtext {
+        font-size: 12px;
+        margin-right: 15px;
+        line-height: 20px;
+    }
+    .prev-hashvalue {
+        font-size: 12px;
+    }
+    .generic-hashvalue {
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 0 7px;
+        line-height: 20px;
+        height: 22px;
+        font-size: 12px;
+    }
+    .error {
+        color: #f5222d;
+        background: #fff1f0;
+        border-color: #ffa39e;
+    }
+    .sucess {
+        color: #52c41a;
+        background: #f6ffed;
+        border-color: #b7eb8f;
+    }
+    .form-row {
+        padding-bottom: 15px;
+    }
+    .generic-hashlabel {
+        margin-right: 15px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    h1 {
+        text-align: center; font-size: 40pt; margin-bottom: 33px; letter-spacing: 3px; position: relative; z-index: 999;
+    }
+    .btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 6.25em;
+        padding: 20px 25px;
+        height: auto;
+        background: -webkit-linear-gradient(45deg,#d4145a,#fbb03b);
+        background: -o-linear-gradient(45deg,#d4145a,#fbb03b);
+        background: linear-gradient(45deg,#d4145a,#fbb03b);
+        border: none;
+        color: #fff;
+    }
+    .card.add:hover {
+        box-shadow: 0 60px 120px -10px rgba(10,16,34,.2)!important;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .btn {
+        outline: none;
+    }
+    .form-row {
+        position: relative;
+    }
+    .generic.label-name {
+        position: absolute;
+        right : 0px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        border-right: 1px solid #d9d9d9;
+    }
+</style>
+</head>
+<body>
+
+
+
+        <h1>BLOCKCHAIN</h1>
+
+        <div class="card">
+            <div class="form-row flex">
+                <div class="label-name">DATA</div>
+                <div class="input-box">
+                    <span class="ant-input-prefix"><i class="anticon anticon-file-text"></i></span>
+                    <input type="text" class="ant-input" value="Welcome to Blockchain Demo 2.0!">
+                </div>
+            </div>
+
+            <div class="form-row flex">
+                <div class="prev-hashtext">PREVIOUS HASH </div>
+                <div><span class="prev-hashvalue sucess">0</span></div>
+            </div>
+
+            <div class="form-row  flex">
+                <div class="generic-hashlabel">HASH</div>
+                <div class="generic-hashvalue sucess">
+                    1efd773bb3c6961b19ae7a9aa65d990159c7b26e1f9567549141463998415f9a
+                </div>
+            </div>
+
+            <div class="form-row flex">
+                <div class="generic-hashlabel">HASH</div>
+                <div class="generic-hashvalue error">
+                    1efd773bb3c6961b19ae7a9aa65d990159c7b26e1f9567549141463998415f9a
+                </div>
+            </div>
+
+            <div class="form-row flex">
+                <div class="generic-hashlabel">GENESIS BLOCK</div>
+                <div class="generic-hashvalue"> on Tue, 17 Oct 2017 19:53:20 GMT </div>
+                <div class="generic label-name">DATA</div>
+            </div>
+
+        </div>
+
+
+
+            <div class="card add">
+                <div class="form-row flex">
+                    <div class="label-name">DATA</div>
+                    <div class="input-box">
+                        <span class="ant-input-prefix"><i class="anticon anticon-file-text"></i></span>
+                        <input type="text" class="ant-input" value="Welcome to Blockchain Demo 2.0!">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn">ADD NEW BLOCK</button>
+                </div>
+
+            </div>
+
+
+</body>
+</html>

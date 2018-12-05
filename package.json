@@ -1,0 +1,33 @@
+{
+  "name": "blockchain-basics",
+  "version": "1.0.0",
+  "description": "Blockchain demo app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrasannaBrabourame/BlockChain-Basics.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Genesis",
+    "Blocks",
+    "Bitcoin",
+    "Crypto",
+    "Currency",
+    "Mining"
+  ],
+  "author": "Prasanna Brabourame",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrasannaBrabourame/BlockChain-Basics/issues"
+  },
+  "homepage": "https://github.com/PrasannaBrabourame/BlockChain-Basics#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4"
+  }
+}
